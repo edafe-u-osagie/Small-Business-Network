@@ -30,13 +30,14 @@ This project demonstrates how to design and implement a secure, efficient, and s
 
 
 ## **VLAN Plan**
-VLAN-ID	     Department
-5         	Management	
-10	           IT	
-15	        Operations	
-20	         Accounts	
-25	          Sales	
-
+| VLAN ID | Department   |
+|---------|-------------|
+| 5       | Management  |
+| 10      | IT          |
+| 15      | Operations  |
+| 20      | Accounts    |
+| 25      | Sales       |
+	
 
 ## ⚙️ **Configuration Summary**
 
