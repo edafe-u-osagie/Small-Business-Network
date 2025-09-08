@@ -28,6 +28,7 @@ This project demonstrates how to design and implement a secure, efficient, and s
                             |
                        Router (G0/1)
 
+---
 
 ## **VLAN Plan**
 | VLAN ID | Department   |
@@ -38,6 +39,7 @@ This project demonstrates how to design and implement a secure, efficient, and s
 | 20      | Accounts    |
 | 25      | Sales       |
 	
+---
 
 ## ⚙️ **Configuration Summary**
 ```text
@@ -259,15 +261,24 @@ end
 Deny: Sales (192.168.25.0) → Accounts (192.168.20.0)
 Permit: All other traffic
 
+---
 
 ## ✅**Verification**
+
 * VLAN assignment: show vlan brief
 * Trunks verified: show interfaces trunk
 * DHCP working: PCs in each VLAN receive IPs automatically
 * Inter-VLAN communication: PCs ping across VLANs successfully
 * ACL verified: Sales cannot access Accounts
 
-## 📂**Video Attached**
-**Video Demo** (https://youtu.be/IJR_V6zw9b4)
+---
 
-⚡ By Edafe Urhukpeoghene Osagie
+## 📂**Video Attached**
+
+* **Video Demo** (https://youtu.be/IJR_V6zw9b4)
+
+---
+
+⚡ *By Edafe Urhukpeoghene Osagie*
+
+---
