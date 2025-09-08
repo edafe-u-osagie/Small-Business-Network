@@ -41,7 +41,7 @@ This project demonstrates how to design and implement a secure, efficient, and s
 
 ## ⚙️ **Configuration Summary**
 ```text
- **Switch 1 (IT)**
+**Switch 1 (IT)**
 
 !
 !
@@ -79,6 +79,7 @@ interface GigabitEthernet0/2
 end
 
 **Switch 2 (Accounts & Operations)**
+
 !
 !
 spanning-tree mode pvst
@@ -244,7 +245,6 @@ interface GigabitEthernet0/1.25
  encapsulation dot1Q 25
  ip address 192.168.25.1 255.255.255.0
  ip access-group 100 in
-
 !
 !
 access-list 100 deny ip 192.168.25.0 0.0.0.255 192.168.20.0 0.0.0.255
@@ -253,8 +253,7 @@ access-list 100 permit ip any any
 !
 !
 end
-...
-end
+
 
 **ACL Rules Explained**
 Deny: Sales (192.168.25.0) → Accounts (192.168.20.0)
@@ -262,11 +261,11 @@ Permit: All other traffic
 
 
 ## **Verification**
-VLAN assignment: show vlan brief
-Trunks verified: show interfaces trunk
-DHCP working: PCs in each VLAN receive IPs automatically
-Inter-VLAN communication: PCs ping across VLANs successfully
-ACL verified: Sales cannot access Accounts
+* VLAN assignment: show vlan brief
+* Trunks verified: show interfaces trunk
+* DHCP working: PCs in each VLAN receive IPs automatically
+* Inter-VLAN communication: PCs ping across VLANs successfully
+* ACL verified: Sales cannot access Accounts
 
 ## **Video Attached**
 Video Demo ( )
