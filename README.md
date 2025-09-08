@@ -260,14 +260,14 @@ Deny: Sales (192.168.25.0) → Accounts (192.168.20.0)
 Permit: All other traffic
 
 
-## **Verification**
+## ✅**Verification**
 * VLAN assignment: show vlan brief
 * Trunks verified: show interfaces trunk
 * DHCP working: PCs in each VLAN receive IPs automatically
 * Inter-VLAN communication: PCs ping across VLANs successfully
 * ACL verified: Sales cannot access Accounts
 
-## **Video Attached**
-Video Demo ( )
+## 📂**Video Attached**
+**Video Demo** ( )
 
 ⚡ By Edafe Urhukpeoghene Osagie
