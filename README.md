@@ -40,7 +40,7 @@ This project demonstrates how to design and implement a secure, efficient, and s
 	
 
 ## ⚙️ **Configuration Summary**
-
+```text
  **Switch 1 (IT)**
 
 !
