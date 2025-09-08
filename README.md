@@ -253,6 +253,7 @@ access-list 100 permit ip any any
 !
 !
 end
+...
 
 **ACL Rules Explained**
 Deny: Sales (192.168.25.0) → Accounts (192.168.20.0)
