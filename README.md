@@ -1,6 +1,6 @@
-## Small Business Network: VLANs & Inter-VLAN Routing (Router-on-a-Stick)
+# Small Business Network: VLANs & Inter-VLAN Routing (Router-on-a-Stick)
 
-📌 **Project Overview**  
+## 📌 **Project Overview**  
 This project demonstrates how to design and implement a secure, efficient, and scalable small business network using VLANs and Router-on-a-Stick for inter-VLAN communication. It includes DHCP pools for automatic IP assignment and ACLs for access control between VLANs.
 
 ✔ Segmentation with VLANs (Management, Sales, Accounts, Operations, IT/Server)  
@@ -10,7 +10,7 @@ This project demonstrates how to design and implement a secure, efficient, and s
 
 ---
 
-🖥️ **Topology (Logical)**  
+## 🖥️ **Topology (Logical)**  
 
      Switch2                         Switch0                       Switch1
 (Accounts & Ops) (Trunk Gi0/1) --> (Mgmt & Sales) <-- (Trunk Gi0/2) (IT)
@@ -20,7 +20,7 @@ This project demonstrates how to design and implement a secure, efficient, and s
                                        |           
                                  Router (G0/1)
 
-**VLAN Plan**
+## **VLAN Plan**
 VLAN-ID	     Department
 5         	Management	
 10	           IT	
@@ -257,6 +257,6 @@ Inter-VLAN communication: PCs ping across VLANs successfully
 ACL verified: Sales cannot access Accounts
 
 ## **Video Attached**
-Video Demo
+Video Demo ( )
 
 ⚡ By Edafe Urhukpeoghene Osagie
