@@ -12,13 +12,22 @@ This project demonstrates how to design and implement a secure, efficient, and s
 
 ## 🖥️ **Topology (Logical)**  
 
-     Switch2                         Switch0                       Switch1
-(Accounts & Ops) (Trunk Gi0/1) --> (Mgmt & Sales) <-- (Trunk Gi0/2) (IT)
-                                    (Fa0/24)          
-                                       |             
-                                       |            
-                                       |           
-                                 Router (G0/1)
+           PC (Accounts)      PC (Operations)      PC (IT)
+                |                 |                  |
+              Switch2            Switch2          Switch1
+        (Accounts & Ops)    (Accounts & Ops)    (IT / Server)
+                | Gi0/1 (Trunk)                 | Gi0/2 (Trunk)
+                \_______________________________/
+                                |
+                            Switch0 
+                         (Mgmt & Sales)
+           PC (Mgmt)                       PC (Sales)
+                |                             |
+               Fa0/1      Fa0/24 (Trunk)     Fa0/2
+                            |
+                            |
+                       Router (G0/1)
+
 
 ## **VLAN Plan**
 VLAN-ID	     Department
